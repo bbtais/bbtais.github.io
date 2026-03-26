@@ -3,26 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="bbtais の制作物、学習記録、取り組み方をまとめたポートフォリオサイトです。"
+  >
   <title>bbtais Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="hero">
+    <p class="eyebrow">Portfolio / Web &amp; Learning</p>
     <h1>bbtais</h1>
-    <p>GitHubポートフォリオサイト</p>
+    <p class="lead">
+      学びと制作を積み重ねながら、伝わりやすく使いやすい Web 体験を形にするためのポートフォリオです。
+    </p>
+    <nav class="hero-nav" aria-label="ページ内ナビゲーション">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>About</h2>
-      <p>ここに自己紹介を書きます。</p>
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>このポートフォリオについて</h2>
+      </div>
+      <div class="section-body">
+        <p>
+          このページでは、bbtais の制作物、学習記録、取り組み方をまとめています。見た目の印象だけでなく、必要な情報に迷わずたどり着けることを大切にしながら、シンプルで使いやすい構成を意識しています。
+        </p>
+        <p>
+          ポートフォリオとして、現在の関心領域や公開中のアウトプットを一目で確認できるように整理し、今後の制作実績もここに積み上げていく想定です。
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/bbtais">GitHubプロフィール</a></li>
-      </ul>
+    <section class="section" id="focus">
+      <div class="section-heading">
+        <p class="section-label">Focus</p>
+        <h2>強みとして育てていること</h2>
+      </div>
+      <div class="grid three-column">
+        <article class="card">
+          <h3>伝わる情報設計</h3>
+          <p>
+            誰に何を届けるページなのかを整理し、短い時間でも内容が伝わる構成を目指しています。
+          </p>
+        </article>
+        <article class="card">
+          <h3>見やすいフロントエンド</h3>
+          <p>
+            余白、文字サイズ、導線の分かりやすさを整え、読みやすく操作しやすい画面づくりを意識しています。
+          </p>
+        </article>
+        <article class="card">
+          <h3>改善を続ける姿勢</h3>
+          <p>
+            小さく作って見直し、必要に応じて育てていくスタイルで、学習内容も制作に反映し続けています。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2>公開している内容</h2>
+      </div>
+      <div class="grid project-grid">
+        <article class="project-card">
+          <div>
+            <p class="project-type">Profile</p>
+            <h3>GitHub</h3>
+            <p>
+              リポジトリ、学習の記録、試作コードなどをまとめています。現在の取り組みを確認する入口として活用しています。
+            </p>
+          </div>
+          <a
+            class="button"
+            href="https://github.com/bbtais"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHubを見る
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="project-type">Portfolio</p>
+            <h3>このサイト</h3>
+            <p>
+              自己紹介、制作スタンス、公開先への導線をまとめたポートフォリオです。必要な情報にすぐ触れられる構成を重視しています。
+            </p>
+          </div>
+          <a class="button button-secondary" href="#about">内容を見る</a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="project-type">Next Step</p>
+            <h3>今後追加していくもの</h3>
+            <p>
+              制作実績ごとの背景、担当した内容、工夫したポイント、改善した点まで分かる形で順次整理していく予定です。
+            </p>
+          </div>
+          <a class="button button-secondary" href="#contact">連絡先へ</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-heading">
+        <p class="section-label">Contact</p>
+        <h2>制作物や活動の確認はこちらから</h2>
+      </div>
+      <div class="contact-panel">
+        <p>
+          公開している制作物や活動記録は GitHub にまとめています。今後はこのポートフォリオにも実績を追加しながら、より具体的に取り組み内容が伝わる形へ更新していきます。
+        </p>
+        <a
+          class="button"
+          href="https://github.com/bbtais"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHubプロフィールへ
+        </a>
+      </div>
     </section>
   </main>
 </body>

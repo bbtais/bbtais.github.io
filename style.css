@@ -1,15 +1,258 @@
+:root {
+  --bg: #f5f1e8;
+  --bg-soft: rgba(255, 255, 255, 0.72);
+  --surface: #fffdf8;
+  --surface-strong: #ffffff;
+  --text: #1f2933;
+  --muted: #52606d;
+  --line: rgba(31, 41, 51, 0.12);
+  --accent: #c7642f;
+  --accent-strong: #8b3f1d;
+  --shadow: 0 18px 45px rgba(43, 52, 69, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 16px;
-  line-height: 1.7;
+  margin: 0;
+  padding: 32px 20px 72px;
+  color: var(--text);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+  line-height: 1.8;
+  background:
+    radial-gradient(circle at top left, rgba(199, 100, 47, 0.16), transparent 32%),
+    linear-gradient(180deg, #f8f3e8 0%, #f1ece2 52%, #ebe4d7 100%);
 }
 
-h1, h2 {
-  margin-top: 24px;
+main,
+.hero {
+  width: min(100%, 1040px);
+  margin: 0 auto;
 }
 
-a {
+.hero {
+  padding: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255, 253, 248, 0.94), rgba(255, 248, 238, 0.82));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.eyebrow,
+.section-label,
+.project-type {
+  margin: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+}
+
+.eyebrow,
+.section-label {
+  color: var(--accent-strong);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 14px;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 500;
+}
+
+.lead {
+  max-width: 720px;
+  margin: 20px 0 0;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: var(--muted);
+}
+
+.hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-nav a,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.95rem;
   text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.hero-nav a {
+  color: var(--text);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.hero-nav a:hover,
+.button:hover {
+  transform: translateY(-2px);
+}
+
+main {
+  margin-top: 28px;
+}
+
+.section {
+  padding: 36px 0 10px;
+}
+
+.section-heading {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.section h2 {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.section-body p,
+.project-card p,
+.card p,
+.contact-panel p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.section-body {
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.three-column {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card,
+.project-card,
+.contact-panel {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--bg-soft);
+  box-shadow: 0 8px 24px rgba(43, 52, 69, 0.06);
+}
+
+.card,
+.project-card {
+  padding: 24px;
+}
+
+.card h3,
+.project-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.project-card {
+  display: grid;
+  gap: 22px;
+  align-content: space-between;
+}
+
+.project-type {
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.button {
+  width: fit-content;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.button:hover {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+.button-secondary {
+  color: var(--accent-strong);
+  background: transparent;
+}
+
+.button-secondary:hover {
+  color: #fff;
+}
+
+.contact-panel {
+  padding: 28px;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  grid-template-columns: 1.6fr auto;
+}
+
+@media (max-width: 920px) {
+  .three-column,
+  .project-grid,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 18px 14px 48px;
+  }
+
+  .hero {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+
+  .hero-nav {
+    gap: 10px;
+  }
+
+  .hero-nav a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding-top: 28px;
+  }
 }
