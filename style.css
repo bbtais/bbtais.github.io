@@ -486,7 +486,7 @@ h1 {
 }
 
 .contact-panel {
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.9fr);
+  grid-template-columns: 1fr;
   padding: 28px;
   align-items: center;
 }
@@ -503,17 +503,22 @@ h1 {
 .contact-link {
   display: grid;
   gap: 4px;
+  margin: 0;
   padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.55);
+}
+
+a.contact-link {
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
     background-color 0.2s ease;
 }
 
-.contact-link:hover {
+a.contact-link:hover {
+  transform: translateY(-2px);
   border-color: rgba(32, 71, 102, 0.28);
   background: rgba(32, 71, 102, 0.06);
 }
@@ -529,31 +534,10 @@ h1 {
   font-weight: 700;
 }
 
-.contact-icon-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: fit-content;
-  padding: 14px 18px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.55);
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.contact-icon-link:hover {
-  border-color: rgba(32, 71, 102, 0.28);
-  background: rgba(32, 71, 102, 0.06);
-}
-
-.github-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+.contact-note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 @media (max-width: 960px) {
@@ -591,8 +575,7 @@ h1 {
   }
 
   .top-nav a,
-  .button,
-  .contact-icon-link {
+  .button {
     width: 100%;
     justify-content: center;
   }
