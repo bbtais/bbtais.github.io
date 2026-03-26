@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="就職活動向けに学歴、受賞歴、自己紹介、活動実績、スキルセットをまとめたポートフォリオです。"
+    content="就職活動向けに学歴、受賞歴、自己紹介、プロジェクト実績、スキルセットをまとめたポートフォリオです。"
   >
   <title>ポートフォリオ | [馬場 大誠]</title>
   <link rel="stylesheet" href="style.css">
@@ -19,7 +19,7 @@
         <a href="#education">学歴</a>
         <a href="#awards">受賞歴</a>
         <a href="#research">研究活動</a>
-        <a href="#activities">活動</a>
+        <a href="#projects">プロジェクト</a>
         <a href="#skills">Skill Set</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -32,7 +32,7 @@
         <p class="eyebrow">Portfolio</p>
         <h1>馬場 大誠</h1>
         <p class="lead">
-          高専・大学・大学院での学びや活動を通して培った経験を、まとめたポートフォリオです。
+          高専・大学・大学院での学びやプロジェクト経験を通して培った経験を、まとめたポートフォリオです。
         </p>
         <p class="hero-text">
           ここでは、学歴、受賞歴、各学校段階での経験、スキルセットを整理しています。
@@ -42,7 +42,7 @@
           <a class="button" href="#education">学歴を見る</a>
           <a class="button button-secondary" href="#awards">受賞歴を見る</a>
           <a class="button button-secondary" href="#research">研究活動へ</a>
-          <a class="button button-secondary" href="#activities">活動へ</a>
+          <a class="button button-secondary" href="#projects">プロジェクトへ</a>
           <a class="button button-secondary" href="#skills">Skill Setへ</a>
           <a class="button button-secondary" href="#contact">連絡先へ</a>
         </div>
@@ -58,7 +58,7 @@
         <div class="intro-panel">
           <p>
             高専から大学、大学院へと進学しながら、情報工学を学び、研究では脳科学やAIに関することを学んでいます。
-            これまでの経験をここでは、その背景が分かるように学歴、活動、受賞歴、スキルセットをまとめました。
+            これまでの経験をここでは、その背景が分かるように学歴、プロジェクト、受賞歴、スキルセットをまとめました。
           </p>
         </div>
 
@@ -225,47 +225,90 @@
               </div>
             </li>
           </ul>
-          <p class="panel-note">
-            論文が複数ある場合は、同じ形式で項目を追加できます。
-          </p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="activities">
+    <section class="section" id="projects">
       <div class="section-heading">
-        <p class="section-label">Activities</p>
-        <h2>学校ごとの活動</h2>
+        <p class="section-label">Projects</p>
+        <h2>参加プロジェクト</h2>
       </div>
       <div class="activity-grid">
         <article class="activity-card">
           <p class="card-label">Kosen</p>
-          <h3>高専での活動</h3>
-          <ul class="activity-list">
-            <li>[授業・演習] C言語やアルゴリズムの基礎を学ぶ</li>
-            <li>[課外活動] 部活動、コンテスト、学内プロジェクトなどに参加</li>
-            <li>[チーム経験] 複数人で協力しながら成果物を完成させる経験を積む</li>
-          </ul>
+          <h3>高専でのプロジェクト</h3>
+          <div class="project-details">
+            <details class="project-detail">
+              <summary class="project-summary">自主探究</summary>
+              <div class="project-content">
+                <p>
+                  高専1年次から3年次にかけて、自主探究としてテーマ設定から調査、実験、発表までを一貫して行いました。
+                </p>
+                <p>
+                  2020年度と2021年度の自主探究発表会では優秀賞を受賞し、2021年度には審査員特別賞も受賞しました。
+                </p>
+              </div>
+            </details>
+            <details class="project-detail">
+              <summary class="project-summary">卒業研究</summary>
+              <div class="project-content">
+                <p>
+                  高専5年次では卒業研究として、研究計画の立案、実装、評価、発表資料の作成までを進めました。
+                </p>
+                <p>
+                  卒業研究発表会では最優秀賞を受賞し、研究内容と発表の完成度が評価されました。
+                </p>
+              </div>
+            </details>
+          </div>
         </article>
 
         <article class="activity-card">
           <p class="card-label">University</p>
-          <h3>大学での活動</h3>
-          <ul class="activity-list">
-            <li>[学業] 情報・知能工学分野の専門科目を学び、機械学習やデータ解析への理解を深める</li>
-            <li>[研究準備] 卒業研究に向けて関連論文の調査、実験設計、発表資料作成に取り組む</li>
-            <li>[発表経験] 卒業研究発表会に向けて、研究内容を分かりやすく伝える力を磨く</li>
-          </ul>
+          <h3>大学でのプロジェクト</h3>
+          <div class="project-details">
+            <details class="project-detail">
+              <summary class="project-summary">卒業研究</summary>
+              <div class="project-content">
+                <p>
+                  豊橋技術科学大学では、説明可能なAIを用いたエクマンの基本感情に対する脳波解析をテーマに卒業研究へ取り組みました。
+                </p>
+                <p>
+                  関連論文の調査、実験設計、モデル実装、結果解析、発表資料作成を進め、卒業研究発表会では優秀賞を受賞しました。
+                </p>
+              </div>
+            </details>
+            <details class="project-detail">
+              <summary class="project-summary">インターン</summary>
+              <div class="project-content">
+                <p>
+                  インターンでは、参加企業の業務内容を理解しながら、実務に近い形で開発や調査に取り組んだ経験を記載できます。
+                </p>
+                <p>
+                  参加時期、担当内容、使用技術、得られた学びなどを追記すると、プロジェクト経験としてより伝わりやすくなります。
+                </p>
+              </div>
+            </details>
+          </div>
         </article>
 
         <article class="activity-card">
           <p class="card-label">Graduate School</p>
-          <h3>大学院での活動</h3>
-          <ul class="activity-list">
-            <li>[研究] 研究テーマに基づき、実験・実装・分析を継続し、知見を整理する</li>
-            <li>[発信] 学会発表や論文執筆を通して、研究成果を外部へ発信する</li>
-            <li>[協働] 研究室での議論や共同作業を通して、周囲と連携しながら研究を進める</li>
-          </ul>
+          <h3>大学院でのプロジェクト</h3>
+          <div class="project-details">
+            <details class="project-detail">
+              <summary class="project-summary">修士研究</summary>
+              <div class="project-content">
+                <p>
+                  大学院では、脳科学・神経科学・深層学習を軸に、脳神経情報動態研究室で修士研究に取り組んでいます。
+                </p>
+                <p>
+                  実験、解析、学会発表、論文執筆を通して研究成果を整理し、継続的に発信できる形へまとめています。
+                </p>
+              </div>
+            </details>
+          </div>
         </article>
       </div>
     </section>
@@ -381,9 +424,6 @@
             <li>2: 学習経験があり、サポートがあれば使える</li>
             <li>1: 触れたことがある程度</li>
           </ul>
-          <p class="panel-note">
-            現在の星は仮置きです。応募先に合わせて並び順や評価を調整してください。
-          </p>
         </aside>
       </div>
     </section>

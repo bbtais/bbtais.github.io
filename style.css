@@ -439,6 +439,58 @@ h1 {
   font-size: 1.45rem;
 }
 
+.project-details {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.project-detail {
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.project-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.project-summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-summary::after {
+  content: "+";
+  color: var(--accent);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.project-detail[open] .project-summary::after {
+  content: "-";
+}
+
+.project-detail[open] .project-summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.project-content {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px 16px;
+}
+
+.project-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .activity-list {
   display: grid;
   gap: 12px;
