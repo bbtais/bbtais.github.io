@@ -511,17 +511,28 @@ h1 {
 
 .skill-list {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 16px;
   list-style: none;
 }
 
 .skill-item {
   display: grid;
-  gap: 10px;
-  padding: 18px 20px;
+  align-content: space-between;
+  justify-items: center;
+  gap: 14px;
+  aspect-ratio: 1 / 1;
+  padding: 18px 16px;
   border: 1px solid var(--line);
   border-radius: 0;
   background: #ffffff;
+  text-align: center;
+}
+
+.skill-info {
+  display: grid;
+  align-content: center;
+  min-height: 3.5rem;
 }
 
 .skill-info h3 {
@@ -530,35 +541,15 @@ h1 {
 
 .skill-eval {
   display: grid;
-  justify-items: start;
+  justify-items: center;
   gap: 6px;
 }
 
 .skill-stars {
-  position: relative;
   display: inline-block;
-  width: 7em;
-  height: 1.2em;
-  font-size: 1rem;
-  letter-spacing: 0.14em;
-}
-
-.skill-stars::before,
-.skill-stars::after {
-  content: "★★★★★";
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.skill-stars::before {
-  color: rgba(32, 71, 102, 0.18);
-}
-
-.skill-stars::after {
-  width: calc(var(--rating) * 20%);
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
   color: var(--highlight);
 }
 
