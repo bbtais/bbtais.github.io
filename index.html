@@ -5,134 +5,305 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="bbtais の制作物、学習記録、取り組み方をまとめたポートフォリオサイトです。"
+    content="就職活動向けに学歴、受賞歴、自己紹介、活動実績、スキルセットをまとめたポートフォリオです。"
   >
-  <title>bbtais Portfolio</title>
+  <title>就活ポートフォリオ | [あなたの名前]</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <p class="eyebrow">Portfolio / Web &amp; Learning</p>
-    <h1>bbtais</h1>
-    <p class="lead">
-      学びと制作を積み重ねながら、伝わりやすく使いやすい Web 体験を形にするためのポートフォリオです。
-    </p>
-    <nav class="hero-nav" aria-label="ページ内ナビゲーション">
-      <a href="#about">About</a>
-      <a href="#focus">Focus</a>
-      <a href="#projects">Projects</a>
+  <header class="site-header">
+    <a class="brand" href="#top">Portfolio</a>
+    <nav class="top-nav" aria-label="ページ内ナビゲーション">
+      <a href="#about">自己紹介</a>
+      <a href="#resume">履歴書</a>
+      <a href="#activities">活動</a>
+      <a href="#skills">Skill Set</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Job Hunting Portfolio</p>
+        <h1>[あなたの名前]</h1>
+        <p class="lead">
+          高専・大学・大学院での学びや活動を通して培った経験を、就職活動向けに分かりやすくまとめたポートフォリオです。
+        </p>
+        <p class="hero-text">
+          履歴書だけでは伝わりにくい取り組み方や強み、継続してきた活動内容が見えるように、学歴、受賞歴、各学校段階での経験、スキルセットを1ページに整理しています。
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#resume">履歴を見る</a>
+          <a class="button button-secondary" href="#contact">連絡先へ</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="基本情報">
+        <p class="card-label">Profile</p>
+        <dl class="profile-list">
+          <div>
+            <dt>氏名</dt>
+            <dd>[あなたの名前]</dd>
+          </div>
+          <div>
+            <dt>所属</dt>
+            <dd>[○○大学大学院 / ○○研究科 / ○○専攻]</dd>
+          </div>
+          <div>
+            <dt>研究テーマ</dt>
+            <dd>[研究テーマを簡潔に記載]</dd>
+          </div>
+          <div>
+            <dt>志望領域</dt>
+            <dd>ソフトウェア開発 / 研究開発 / データ活用</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="template-note" aria-label="編集メモ">
+      <p>
+        <code>[ ]</code> で囲んだ箇所は、氏名、学校名、年度、受賞名、連絡先などの実データに置き換えてください。
+      </p>
+    </section>
+
     <section class="section" id="about">
       <div class="section-heading">
-        <p class="section-label">About</p>
-        <h2>このポートフォリオについて</h2>
+        <p class="section-label">About Me</p>
+        <h2>自己紹介</h2>
       </div>
-      <div class="section-body">
+      <div class="intro-panel">
         <p>
-          このページでは、bbtais の制作物、学習記録、取り組み方をまとめています。見た目の印象だけでなく、必要な情報に迷わずたどり着けることを大切にしながら、シンプルで使いやすい構成を意識しています。
+          高専から大学、大学院へと進学しながら、プログラミング、研究、チームでの活動に継続して取り組んできました。課題に向き合うときは、まず状況を整理し、必要な要素に分解しながら、着実に改善していく進め方を大切にしています。
         </p>
         <p>
-          ポートフォリオとして、現在の関心領域や公開中のアウトプットを一目で確認できるように整理し、今後の制作実績もここに積み上げていく想定です。
+          就職活動では、これまでの学びを土台に、技術力だけでなく、継続力、協働力、そして自分の言葉で説明できる力も伝えていきたいと考えています。ここでは、その背景が分かるように学歴、活動、受賞歴、スキルセットをまとめました。
         </p>
       </div>
     </section>
 
-    <section class="section" id="focus">
+    <section class="section" id="resume">
       <div class="section-heading">
-        <p class="section-label">Focus</p>
-        <h2>強みとして育てていること</h2>
+        <p class="section-label">Resume</p>
+        <h2>履歴書 / 学歴と受賞歴</h2>
       </div>
-      <div class="grid three-column">
-        <article class="card">
-          <h3>伝わる情報設計</h3>
-          <p>
-            誰に何を届けるページなのかを整理し、短い時間でも内容が伝わる構成を目指しています。
-          </p>
+      <div class="resume-layout">
+        <article class="panel">
+          <p class="card-label">Academic History</p>
+          <ol class="timeline">
+            <li>
+              <p class="timeline-date">20XX年4月</p>
+              <div class="timeline-body">
+                <h3>[○○高等専門学校 ○○学科] 入学</h3>
+                <p>プログラミング、数学、工学基礎を学び始める。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline-date">20XX年3月</p>
+              <div class="timeline-body">
+                <h3>[○○高等専門学校 ○○学科] 卒業</h3>
+                <p>専門分野の基礎知識と、継続して学ぶ姿勢を身につける。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline-date">20XX年4月</p>
+              <div class="timeline-body">
+                <h3>[○○大学 ○○学部 / ○○学科] 入学・編入学</h3>
+                <p>より専門的な内容に取り組み、研究や発展的な授業へと学びを広げる。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline-date">20XX年3月</p>
+              <div class="timeline-body">
+                <h3>[○○大学 ○○学部 / ○○学科] 卒業</h3>
+                <p>卒業研究やプロジェクトを通して、自分の関心分野を深める。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline-date">20XX年4月</p>
+              <div class="timeline-body">
+                <h3>[○○大学大学院 ○○研究科 / ○○専攻] 入学</h3>
+                <p>研究活動を中心に、専門性と論理的な説明力を高める。</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline-date">20XX年3月予定</p>
+              <div class="timeline-body">
+                <h3>[○○大学大学院 ○○研究科 / ○○専攻] 修了予定</h3>
+                <p>研究成果をまとめつつ、次の環境で活かせる実践力へつなげる。</p>
+              </div>
+            </li>
+          </ol>
         </article>
-        <article class="card">
-          <h3>見やすいフロントエンド</h3>
-          <p>
-            余白、文字サイズ、導線の分かりやすさを整え、読みやすく操作しやすい画面づくりを意識しています。
-          </p>
-        </article>
-        <article class="card">
-          <h3>改善を続ける姿勢</h3>
-          <p>
-            小さく作って見直し、必要に応じて育てていくスタイルで、学習内容も制作に反映し続けています。
+
+        <article class="panel">
+          <p class="card-label">Awards</p>
+          <ul class="award-list">
+            <li>
+              <strong>20XX年</strong>
+              <span>[コンテスト名 / 学会名] [受賞名]</span>
+            </li>
+            <li>
+              <strong>20XX年</strong>
+              <span>[プロジェクト名 / 発表会名] [賞名または評価]</span>
+            </li>
+            <li>
+              <strong>20XX年</strong>
+              <span>[研究発表 / 学内表彰 / 外部イベント] [受賞内容]</span>
+            </li>
+          </ul>
+          <p class="panel-note">
+            受賞歴が複数ある場合は、「何で評価されたか」がひと目で分かるように賞名の後ろへ1行補足を加えると、より伝わりやすくなります。
           </p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section" id="activities">
       <div class="section-heading">
-        <p class="section-label">Projects</p>
-        <h2>公開している内容</h2>
+        <p class="section-label">Activities</p>
+        <h2>学校ごとの活動</h2>
       </div>
-      <div class="grid project-grid">
-        <article class="project-card">
-          <div>
-            <p class="project-type">Profile</p>
-            <h3>GitHub</h3>
-            <p>
-              リポジトリ、学習の記録、試作コードなどをまとめています。現在の取り組みを確認する入口として活用しています。
-            </p>
-          </div>
-          <a
-            class="button"
-            href="https://github.com/bbtais"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHubを見る
-          </a>
+      <div class="activity-grid">
+        <article class="activity-card">
+          <p class="card-label">Kosen</p>
+          <h3>高専での活動</h3>
+          <ul class="activity-list">
+            <li>[授業・演習] C言語やアルゴリズムの基礎を学ぶ</li>
+            <li>[課外活動] 部活動、コンテスト、学内プロジェクトなどに参加</li>
+            <li>[チーム経験] 複数人で協力しながら成果物を完成させる経験を積む</li>
+          </ul>
         </article>
 
-        <article class="project-card">
-          <div>
-            <p class="project-type">Portfolio</p>
-            <h3>このサイト</h3>
-            <p>
-              自己紹介、制作スタンス、公開先への導線をまとめたポートフォリオです。必要な情報にすぐ触れられる構成を重視しています。
-            </p>
-          </div>
-          <a class="button button-secondary" href="#about">内容を見る</a>
+        <article class="activity-card">
+          <p class="card-label">University</p>
+          <h3>大学での活動</h3>
+          <ul class="activity-list">
+            <li>[学業] 専門科目を深め、関心のある分野を広げる</li>
+            <li>[研究準備] ゼミ、実験、演習を通して調査・発表力を磨く</li>
+            <li>[対外活動] ハッカソン、インターン、学会参加などを追記可能</li>
+          </ul>
         </article>
 
-        <article class="project-card">
-          <div>
-            <p class="project-type">Next Step</p>
-            <h3>今後追加していくもの</h3>
-            <p>
-              制作実績ごとの背景、担当した内容、工夫したポイント、改善した点まで分かる形で順次整理していく予定です。
-            </p>
-          </div>
-          <a class="button button-secondary" href="#contact">連絡先へ</a>
+        <article class="activity-card">
+          <p class="card-label">Graduate School</p>
+          <h3>大学院での活動</h3>
+          <ul class="activity-list">
+            <li>[研究] 研究テーマに基づき、実験・実装・分析を継続</li>
+            <li>[発信] 研究発表、論文、ポスター発表などの経験を整理</li>
+            <li>[役割] 後輩指導や研究室内の協働で、周囲と進める力を磨く</li>
+          </ul>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="section-label">My Skill Set</p>
+        <h2>言語・ツールの自己評価</h2>
+      </div>
+      <div class="skills-layout">
+        <article class="panel">
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-info">
+                <h3>C言語</h3>
+                <p>基礎実装、アルゴリズム、課題制作の中心として学習。</p>
+              </div>
+              <div class="skill-eval">
+                <span class="skill-stars" style="--rating: 4;" aria-hidden="true"></span>
+                <span class="skill-score">4 / 5</span>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <h3>Python</h3>
+                <p>データ処理、スクリプト作成、研究・試作で活用。</p>
+              </div>
+              <div class="skill-eval">
+                <span class="skill-stars" style="--rating: 4;" aria-hidden="true"></span>
+                <span class="skill-score">4 / 5</span>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <h3>C++</h3>
+                <p>授業や演習での利用経験に応じて調整可能。</p>
+              </div>
+              <div class="skill-eval">
+                <span class="skill-stars" style="--rating: 3;" aria-hidden="true"></span>
+                <span class="skill-score">3 / 5</span>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <h3>JavaScript</h3>
+                <p>Webページ制作やUI実装の経験があればここに記載。</p>
+              </div>
+              <div class="skill-eval">
+                <span class="skill-stars" style="--rating: 3;" aria-hidden="true"></span>
+                <span class="skill-score">3 / 5</span>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <h3>HTML / CSS</h3>
+                <p>ポートフォリオ制作やフロントエンド基礎の習熟度を反映。</p>
+              </div>
+              <div class="skill-eval">
+                <span class="skill-stars" style="--rating: 3;" aria-hidden="true"></span>
+                <span class="skill-score">3 / 5</span>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-info">
+                <h3>Git / GitHub</h3>
+                <p>バージョン管理、公開、共同開発の経験に合わせて調整。</p>
+              </div>
+              <div class="skill-eval">
+                <span class="skill-stars" style="--rating: 3;" aria-hidden="true"></span>
+                <span class="skill-score">3 / 5</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <aside class="panel skill-guide">
+          <p class="card-label">Guide</p>
+          <h3>星評価の目安</h3>
+          <ul class="guide-list">
+            <li>5: 研究や制作で継続的に使い、自力で進められる</li>
+            <li>4: 授業・研究・個人開発で十分に活用できる</li>
+            <li>3: 基本的な実装や課題に対応できる</li>
+            <li>2: 学習経験があり、サポートがあれば使える</li>
+            <li>1: 触れたことがある段階</li>
+          </ul>
+          <p class="panel-note">
+            現在の星は仮置きです。応募先に合わせて並び順や評価を調整してください。
+          </p>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="contact">
       <div class="section-heading">
         <p class="section-label">Contact</p>
-        <h2>制作物や活動の確認はこちらから</h2>
+        <h2>連絡先</h2>
       </div>
       <div class="contact-panel">
-        <p>
-          公開している制作物や活動記録は GitHub にまとめています。今後はこのポートフォリオにも実績を追加しながら、より具体的に取り組み内容が伝わる形へ更新していきます。
-        </p>
-        <a
-          class="button"
-          href="https://github.com/bbtais"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHubプロフィールへ
-        </a>
+        <div class="contact-copy">
+          <p>
+            面談やご連絡の窓口として使う想定の欄です。メールアドレス、GitHub、必要に応じて研究室のページや LinkedIn などを追加してください。
+          </p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:your-email@example.com">[your-email@example.com]</a>
+          <a class="contact-link" href="https://github.com/bbtais" target="_blank" rel="noreferrer">
+            GitHub Profile
+          </a>
+          <span class="contact-link contact-placeholder">[LinkedIn or lab page URL]</span>
+        </div>
       </div>
     </section>
   </main>
