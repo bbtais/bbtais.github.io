@@ -15,7 +15,8 @@
     <a class="brand" href="#top">Portfolio</a>
     <nav class="top-nav" aria-label="ページ内ナビゲーション">
       <a href="#about">自己紹介</a>
-      <a href="#resume">履歴書</a>
+      <a href="#education">学歴</a>
+      <a href="#awards">受賞歴</a>
       <a href="#research">研究活動</a>
       <a href="#activities">活動</a>
       <a href="#skills">Skill Set</a>
@@ -35,7 +36,11 @@
           ここでは、学歴、受賞歴、各学校段階での経験、スキルセットを整理しています。
         </p>
         <div class="hero-actions">
-          <a class="button" href="#resume">履歴を見る</a>
+          <a class="button" href="#education">学歴を見る</a>
+          <a class="button button-secondary" href="#awards">受賞歴を見る</a>
+          <a class="button button-secondary" href="#research">研究活動へ</a>
+          <a class="button button-secondary" href="#activities">活動へ</a>
+          <a class="button button-secondary" href="#skills">Skill Setへ</a>
           <a class="button button-secondary" href="#contact">連絡先へ</a>
         </div>
       </div>
@@ -57,9 +62,13 @@
         <article class="panel about-profile" aria-label="プロフィール">
           <p class="card-label">Profile</p>
           <figure class="profile-photo-block">
-            <div class="profile-photo-placeholder">ここに顔写真を追加</div>
+            <img
+              class="profile-photo"
+              src="images/slack_profile.png"
+              alt="馬場 大誠の顔写真"
+            >
             <figcaption class="photo-note">
-              顔写真を使う場合は、この枠を画像に差し替えてください。
+              プロフィール写真を掲載しています。
             </figcaption>
           </figure>
           <dl class="profile-list">
@@ -85,84 +94,94 @@
       </div>
     </section>
 
-    <section class="section" id="resume">
+    <section class="section" id="education">
       <div class="section-heading">
-        <p class="section-label">Resume</p>
-        <h2>履歴書 / 学歴と受賞歴</h2>
+        <p class="section-label">Education</p>
+        <h2>学歴</h2>
       </div>
-      <div class="resume-layout">
-        <article class="panel">
-          <p class="card-label">Academic History</p>
-          <ol class="timeline">
-            <li>
-              <p class="timeline-date">2019年4月</p>
-              <div class="timeline-body">
-                <h3>八戸工業高等専門学校 産業システム工学科 電気情報工学コース 入学</h3>
-              </div>
-            </li>
-            <li>
-              <p class="timeline-date">2024年3月</p>
-              <div class="timeline-body">
-                <h3>八戸工業高等専門学校 産業システム工学科 電気情報工学コース 卒業</h3>
-              </div>
-            </li>
-            <li>
-              <p class="timeline-date">2024年4月</p>
-              <div class="timeline-body">
-                <h3>豊橋技術科学大学 情報・知能工学課程 3年次 編入学</h3>
-              </div>
-            </li>
-            <li>
-              <p class="timeline-date">2026年3月</p>
-              <div class="timeline-body">
-                <h3>豊橋技術科学大学 情報・知能工学課程 卒業</h3>
-              </div>
-            </li>
-            <li>
-              <p class="timeline-date">2026年4月</p>
-              <div class="timeline-body">
-                <h3>豊橋技術科学大学 工学研究科 情報・知能工学専攻 入学</h3>
-              </div>
-            </li>
-            <li>
-              <p class="timeline-date">2028年3月予定</p>
-              <div class="timeline-body">
-                <h3>豊橋技術科学大学 工学研究科 情報・知能工学専攻 修了予定</h3>
-              </div>
-            </li>
-          </ol>
-        </article>
+      <article class="panel">
+        <p class="card-label">Academic History</p>
+        <ol class="timeline">
+          <li>
+            <p class="timeline-date">2019年4月</p>
+            <div class="timeline-body">
+              <h3>八戸工業高等専門学校 産業システム工学科 電気情報工学コース 入学</h3>
+            </div>
+          </li>
+          <li>
+            <p class="timeline-date">2024年3月</p>
+            <div class="timeline-body">
+              <h3>八戸工業高等専門学校 産業システム工学科 電気情報工学コース 卒業</h3>
+            </div>
+          </li>
+          <li>
+            <p class="timeline-date">2024年4月</p>
+            <div class="timeline-body">
+              <h3>豊橋技術科学大学 情報・知能工学課程 3年次 編入学</h3>
+            </div>
+          </li>
+          <li>
+            <p class="timeline-date">2026年3月</p>
+            <div class="timeline-body">
+              <h3>豊橋技術科学大学 情報・知能工学課程 卒業</h3>
+            </div>
+          </li>
+          <li>
+            <p class="timeline-date">2026年4月</p>
+            <div class="timeline-body">
+              <h3>豊橋技術科学大学 工学研究科 情報・知能工学専攻 入学</h3>
+            </div>
+          </li>
+          <li>
+            <p class="timeline-date">2028年3月予定</p>
+            <div class="timeline-body">
+              <h3>豊橋技術科学大学 工学研究科 情報・知能工学専攻 修了予定</h3>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </section>
 
-        <article class="panel">
-          <p class="card-label">Awards</p>
-          <ul class="award-list">
-            <li>
-              <strong>高専</strong>
-              <div class="award-entry">
-                <span class="award-title">2023年度 八戸工業高等専門学校 電気情報工学コース 卒業研究発表会 最優秀賞 (2024.1)</span>
-              </div>
-              <div class="award-entry">
-                <span class="award-title">八戸工業高等専門学校 電気情報工学コース 学年別成績優秀賞 (2024.3)</span>
-                <p class="award-description">
-                  高専5年次の成績が主席のものに贈られる賞です。
-                </p>
-              </div>
-            </li>
-            <li>
-              <strong>大学学部</strong>
-              <div class="award-entry">
-                <span class="award-title">2025年度 豊橋技術科学大学 情報・知能工学系 卒業研究発表会 優秀賞 (2025.12)</span>
-              </div>
-              <div class="award-entry">
-                <span class="award-title">2025年度 豊橋技術科学大学 同窓会会長賞 (2026.3)</span>
-                <p class="award-description">
-                  大学学部の成績が特に優秀なものに贈られる賞です。
-                </p>
-              </div>
-            </li>
-          </ul>
-        </article>
+    <section class="section" id="awards">
+      <div class="section-heading">
+        <p class="section-label">Awards</p>
+        <h2>受賞歴</h2>
       </div>
+      <article class="panel">
+        <p class="card-label">Awards Detail</p>
+        <ul class="award-list">
+          <li>
+            <strong>高専</strong>
+            <div class="award-entry">
+              <span class="award-title">2023年度 八戸工業高等専門学校 電気情報工学コース 卒業研究発表会 最優秀賞 (2024.1)</span>
+              <p class="award-description">
+                卒業研究発表会での発表内容と研究の完成度が評価され、最優秀賞を受賞しました。
+              </p>
+            </div>
+            <div class="award-entry">
+              <span class="award-title">八戸工業高等専門学校 電気情報工学コース 学年別成績優秀賞 (2024.3)</span>
+              <p class="award-description">
+                高専5年次の成績が主席のものに贈られる賞です。
+              </p>
+            </div>
+          </li>
+          <li>
+            <strong>大学学部</strong>
+            <div class="award-entry">
+              <span class="award-title">2025年度 豊橋技術科学大学 情報・知能工学系 卒業研究発表会 優秀賞 (2025.12)</span>
+              <p class="award-description">
+                卒業研究の内容と発表が評価され、情報・知能工学系の発表会で優秀賞を受賞しました。
+              </p>
+            </div>
+            <div class="award-entry">
+              <span class="award-title">2025年度 豊橋技術科学大学 同窓会会長賞 (2026.3)</span>
+              <p class="award-description">
+                大学学部の成績が特に優秀なものに贈られる賞です。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </article>
     </section>
 
     <section class="section" id="research">
