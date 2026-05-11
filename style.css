@@ -35,8 +35,7 @@ a {
   color: inherit;
 }
 
-main,
-.site-footer {
+main {
   width: min(100%, 1080px);
   margin: 0 auto;
 }
@@ -676,18 +675,6 @@ a.contact-link:hover {
   margin: 0;
   font-size: 0.95rem;
   color: var(--muted);
-}
-
-.site-footer {
-  margin-top: 48px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-}
-
-.site-footer p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 @media (max-width: 960px) {
